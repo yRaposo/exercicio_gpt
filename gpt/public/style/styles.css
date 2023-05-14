@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative; /* Adicionado para posicionar corretamente o chat-log */
+  min-height: 100vh; /* Adicionado para ocupar toda a altura da página */
+  display: flex;
+  flex-direction: column; /* Adicionado para alinhar o chat-log e o input-group */
+}
+
+#chat-log {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 20px;
+  flex-grow: 1; /* Adicionado para ocupar o espaço disponível */
+  overflow-y: scroll;
+}
+
+.user-message {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.bot-message {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  margin-top: 20px;
+  position: sticky; /* Alterado para sticky */
+  bottom: 0; /* Adicionado para fixar no rodapé */
+  background-color: #fff;
+  padding: 20px;
+}
+
+.input-group input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.input-group button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.input-group button:hover {
+  background-color: #0056b3;
+}
